@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,56 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>NYT Artice Puller</title>
 </head>
+
 <body>
     
+    <div class="container">
+        <!--Main Heading-->
+        <div class="row">
+            <div class="col text-center">
+                <h1 id="mainHeading">New York Times Search</h1>
+            </div>
+        </div>
+
+            <!--Search Forms-->
+
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Search Term:</label>
+                      <input type="text" class="form-control" id="searchTerm" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Number of Records to Retrieve</label>
+                      <input type="text" class="form-control" id="numberTerm" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Start Year(Optional):</label>
+                        <input type="text" class="form-control" id="startYear" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">End Year(Optional):</label>
+                        <input type="text" class="form-control" id="endYear" placeholder="">
+                      </div>
+                      <button type="button" class="btn btn-primary">Search!</button>
+                  </form>
+            </div>
+
+            <div class="row">
+                <div class="col" id="results">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 <script src="assets/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
